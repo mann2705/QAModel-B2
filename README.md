@@ -44,3 +44,34 @@ Format for the generated output:
 1. Performed tokenization and created a vocabulary.
 2. Developed a basic structure of a Transformer model.
 3. Used a Naive Bayes Classifier for text classification.
+
+   #Group 3
+Tasks Performed:
+Selection of Model Type: Decided on an encoder-decoder (BERT-like) model, as it is suitable for understanding tasks like question answering and classification.
+
+Hyperparameter Selection:
+
+Embedding Dimension: Chose the embedding dimension based on the bert-base-uncased model, which has a default embedding size of 768.
+Number of Layers: Used a 12-layer model (BERT-base configuration).
+Attention Heads: Set to 12 attention heads, which enables capturing multiple relationships between tokens.
+Batch Size and Sequence Length:
+Batch size set to 16 to accommodate Colab memory constraints.
+Sequence length set to 512, allowing the model to handle the maximum input length for BERT-based tasks.
+Model Initialization:
+
+Weight Initialization: Utilized pre-trained weights from the bert-base-uncased model, which provides a solid starting point for fine-tuning on the COVID-QA task.
+Token Embedding Initialization: Leveraged pre-trained embeddings from BERT (bert-base-uncased), which are optimized for understanding language context, especially suited for question-answering tasks.
+Data Preparation:
+
+Loaded and preprocessed the formatted_output.csv file by extracting questions and answers into separate columns.
+Created a PyTorch dataset to tokenize the question-answer pairs using the BERT tokenizer.
+Split the dataset into training and testing sets and set up DataLoaders for both.
+Model Training Setup:
+
+Configured the BERT model for sequence classification using the question-answer pairs as inputs.
+Set up an optimizer (AdamW) and defined a basic training loop for fine-tuning the model.
+Expected Results:
+
+The model should respond to COVID-related questions with relevant answers based on fine-tuning.
+If a non-COVID-related question is asked, the model will respond with a predefined message indicating that it only answers COVID-related questions.
+
