@@ -44,13 +44,13 @@ Format for the generated output:
 1. Performed tokenization and created a vocabulary.
 2. Developed a basic structure of a Transformer model.
 3. Used a Naive Bayes Classifier for text classification.
-#
 
-Group 3
+
+## Group 3
 Tasks Performed:
 Selection of Model Type: Decided on an encoder-decoder (BERT-like) model, as it is suitable for understanding tasks like question answering and classification.
 
-Hyperparameter Selection:
+### Hyperparameter Selection:
 
 Embedding Dimension: Chose the embedding dimension based on the bert-base-uncased model, which has a default embedding size of 768.
 Number of Layers: Used a 12-layer model (BERT-base configuration).
