@@ -31,3 +31,16 @@ Format for the generated output:
 ### I am a covid Q&A Agent... 
 
 ### Answer: "Answer should be printed related to the question"
+
+
+
+## Group 2
+
+### Files on Git:
+- Group2.py
+
+### Tasks Performed:
+
+1. Performed tokenization and created a vocabulary.
+2. Developed a basic structure of a Transformer model.
+3. Used a Naive Bayes Classifier for text classification.
